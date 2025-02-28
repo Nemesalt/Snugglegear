@@ -27,6 +27,13 @@
             width: 150px; 
             height: auto;
         }
+
+        /* Mobile layout (width < 900px) */
+        @media (max-width: 900px) {
+            .image-row {
+                flex-direction: column; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -37,12 +44,13 @@
             <img src="resized_image_enhanced.png">
         </div>
         <h2>Snuggleback.H</h2>
+        <p>Description of the product.</p>
         <p>999 Baht</p>
-        <button onclick="thankyou()">Buy Now</button>
+        <button onclick="thankYou()">Buy Now</button>
     </div>
 
- <script>
-        function thankyou() {
+    <script>
+        function thankYou() {
             alert("Thank you for your purchase!");
         }
     </script>
