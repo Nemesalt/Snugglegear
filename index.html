@@ -12,16 +12,30 @@
             margin: 0;
             background-color: #f8f8f8;
         }
-        div {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+        }
+        .image-row {
+            display: flex;
+            flex-direction: row; 
+            gap: 10px; 
+        }
+        img {
+            width: 150px; 
+            height: auto;
         }
     </style>
 </head>
 <body>
 
-    <div>
-        <img src="imageb.png">
-        <img src="resized_image_enhanced.png">
+    <div class="container">
+        <div class="image-row">
+            <img src="imageb_enhanced.png">
+            <img src="resized_image_enhanced.png">
+        </div>
         <h2>Snuggleback.H</h2>
         <p>999 Baht</p>
         <button>Buy Now</button>
